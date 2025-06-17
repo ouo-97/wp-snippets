@@ -1,0 +1,15 @@
+iframe {
+  border: none;
+  
+}
+
+h1 {
+ margin-left: 12.5rem;
+ margin-top: 5rem;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  
+}
