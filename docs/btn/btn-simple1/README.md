@@ -11,7 +11,7 @@
 
 ## 制作したもの
 
-[![ボタンデモプレビュー](thumbnail.png)](https://ouo-97.github.io/wp-snippets/)
+[![ボタンデモプレビュー](docs/thumbnail/simple-1_thumbnail.png)](https://ouo-97.github.io/wp-snippets/)
 
 ---
 

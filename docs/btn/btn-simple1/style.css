@@ -1,0 +1,55 @@
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn {
+  display: inline-block;
+  height: 17px;
+  position: relative;
+  padding: 4px 40px;
+  text-decoration: none;
+  border: solid 0.5px;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.btn span {
+  display: inline-block;
+  padding: 4px 0px;
+  opacity: 0;
+}
+
+.btn::before {
+  position: absolute;
+  content: attr(data-text);
+  transition-duration: 0.4s;
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.btn:hover::before {
+  transform: translateY(-130%);
+  opacity: 0;
+}
+
+.btn::after {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  content: attr(data-text);
+  transition-duration: 0.6s;
+  transform: translateY(130%);
+  opacity: 0;
+}
+
+.btn:hover::after {
+  transform: translateY(-20%);
+  opacity: 1;
+}
