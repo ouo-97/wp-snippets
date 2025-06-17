@@ -6,6 +6,8 @@ body {
 
 .btn {
   display: inline-block;
+  height: 17px;
+  position: relative;
   padding: 4px 40px;
   text-decoration: none;
   border: solid 0.5px;
@@ -18,25 +20,37 @@ body {
 
   span {
     display: inline-block;
-    transform: translateY(0);
-    transition:  0.3s ease;
-
-    &:hover {
-      transform: translateY(-130%);
-    }
+    padding: 4px 0px;
+    opacity: 0;
   }
 
   &::before {
-    content: attr(data-text);
-    display: inline-block;
     position: absolute;
-    top: 100%;
-    transform: translateY(0);
-    transition:  0.3s ease;
+    content: attr(data-text);
+    transition-duration: 0.4s;
+    transform: translateY(0%);
+    opacity: 1;
   }
 
   &:hover::before {
-    transform: translateY(-130%)
+    transform: translateY(-130%);
+    opacity: 0;
+  }
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    content: attr(data-text);
+    transition-duration: 0.6s;
+    transform: translateY(130%);
+    opacity: 0;
+  }
+
+  &:hover::after {
+    transform: translateY(-20%);
+    opacity: 1;
   }
 
 }
