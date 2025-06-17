@@ -9,6 +9,12 @@
 
 ---
 
+## 制作したもの
+
+[![ボタンデモプレビュー](docs/thumbnail/simple1_thumbnail.png)](https://ouo-97.github.io/wp-snippets/)
+
+---
+
 ## 難しかったところ
 
 ### 1 `::before`と`::after`
